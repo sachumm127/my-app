@@ -39,7 +39,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-region: ${{ env.AWS_REGION }}
-        role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+        role-to-assume: role-to-assume: arn:aws:iam::343218199136:role/aws-git-secretmanager-role
         role-session-name: github-actions-session
     - name: Retrieve AWS Account ID
       id: aws-account-id
